@@ -1,0 +1,51 @@
+</html>
+<body>
+<a href="file:///C:/Users/alejo/OneDrive/Desktop/PROYECTOFINAL/quienes%20somos.html">Inicio</a>
+<br>
+<br>
+<a href="file:///C:/Users/alejo/OneDrive/Desktop/PROYECTOFINAL/historia.html">Historia</a>
+<br>
+<br>
+<a href="file:///C:/Users/alejo/OneDrive/Desktop/PROYECTOFINAL/beneficios.html">Beneficios</a>
+
+
+<h1><p style="color:  #F4841A; text-align:center; font-size: 50">COMO SE CULTIVA EL CHONTADURO</h1>
+<p>El chontaduro es una palma tropical que se cultiva en varios países de Latinoamérica. Es un cultivo popular en zonas con alta temperatura y precipitación pluvial. 
+<p>1. Siembra: Semillas a unos 5 cm de profundidad, con un espaciamiento de al menos 4 metros
+<p>2. Suelo: No requiere suelos ricos en nutrientes, pero sí con buena profundidad y drenaje
+<p>3. Cosecha: La primera cosecha sale a los 4 años, y de ahí en adelante cada año hay producto
+<p>4. Altura: Las palmas de chontaduro pueden alcanzar una altura de hasta 20 metros
+<p>5. Asociaciones: Se asocia bien con cultivos como el cacao, el limón, la piña y el café
+<br>
+<br>
+<p>PARA EL CULTIVO DE CHONTADURO, SE RECOMIENDA:</p>
+<p>-Tener en cuenta el terreno donde se realizará 
+<p>-Contar con una buena distancia de siembra que permita a las raíces desarrollarse 
+<p>-Que el terreno tenga alta profundidad y buen drenaje 
+
+<h2><p style="color:  #D35D11; text-align:left; font-size: 37">OBTENCION DEL PALPITO DEL CHOINTADURO</h2>
+</body>
+
+<p><p style="color: #D35D11; text-align:left; font-size: 35">Selección:</p>
+Las palmas se seleccionan para la extracción de palmito bajo el criterio del diámetro de palma a tallo libre, tomado éste a 25 cm del suelo, con un grosor de 10 a 15 cm, en ese momento obtendremos los mayores rendimientos industriales. Para las condiciones del Piedemonte Caqueteño, el chontaduro adquiere el estado óptimo de cosecha de 16 a 19 meses después del trasplante a campo. Se debe tener mucho cuidado al cosechar con los hijuelos pues se les pueden causar daños.
+<p><p style="color: #D35D11; text-align:left; font-size: 35">Deshojado:</p>
+Esta labor consiste en dejar libres de hojas la palma, para ello se utiliza un machete afilado. Las hojas cortadas se pican y se incorporan en las calles de esta forma sirve como control de malezas y abono al suelo.
+<p><p style="color: #D35D11; text-align:left; font-size: 35">Cortado superior e inferior:</p>
+El corte superior se realiza aproximadamente a 20 cm debajo de la apertura de la copa de la palma y el corte inferior cuando ésta presente una protuberancia es decir en el entrenudo. El tacón o estaca se deja en pie para soporte y alimento de los hijuelos.
+<p><p style="color: #D35D11; text-align:left; font-size: 35">Pelado o descapado:</p>
+Esta labor es importante puesto que de ella depende la calidad del material llevado a la fábrica. Consiste en la eliminación de las capas de la cubierta del palmo. Si se procesa inmediatamente se debe dejar con una capa, 5 a 7 cm de yuca y con una longitud total de 65 a 70 cm; pero si no se procesa inmediatamente es recomendable dejarlo con 2 capas de 12 cm de yuca o parte basal y una longitud total de 80 cm. Esto con el fin de proteger el palmito de daños mecánicos, deterioro bioquimico y microbiano.
+<p><p style="color: #D35D11; text-align:left; font-size: 35">Corte de yuca o parte basal:</p>
+Para ejecutar esta labor se observa en la base el cambio de coloración que corresponde al entrenudo, es necesario eliminar el exceso de yuça, para ello se dejan entre 10 a 12 cm de base. Esta servirá como soporte y protección al palmo en el manipulco y transporte de la posible contaminación por hongos y deshidratación.
+<p><p style="color: #D35D11; text-align:left; font-size: 35">Uniformidad de tamaño (Corte de puntas):</p>
+Este corte se realiza en el entrenudo dejando el palmo con una longitud de 70 a 80 cm, con un peso aproximado de 1.000 a 1.200 g.
+<p><p style="color: #D35D11; text-align:left; font-size: 35">Atado (tercio):</p>
+Se realizan tercios de 15 palmos cada uno acomodado en forma alternada.
+<p><p style="color: #D35D11; text-align:left; font-size: 35">Acondicionamiento de espera:</p>
+Se dejan los palmos en lugares sombríos y limpios; además de protegerlos contra animales de campo.
+<p><p style="color: #D35D11; text-align:left; font-size: 35">Acopiado:</p>
+Se ordenan los tercios en el camión acopiador en forma ordenada evitando quebrar los palmos.
+
+
+
+
+

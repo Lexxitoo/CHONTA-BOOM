@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <style>
+        /* Estilo para los enlaces de navegación */
+        nav {
+            display: flex;
+            gap: 20px; /* Espacio entre los enlaces */
+            justify-content: center; /* Centrar los enlaces */
+            align-items: center;
+            background-color: white;
+            padding: 10px 0;
+        }
+
+        nav a {
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background-color: white;
+            color: black;
+            font-size: 18px;
+            font-family: Bebas Neue, sans-serif;
+            border: none;
+        }
+
+        nav a:hover {
+            background-color: #ece4e0; /* Color al pasar el cursor */
+        }
+
+        /* Estilo para el encabezado */
+        header {
+            background-color: white; /* Fondo blanco */
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo-container {
+            display: inline-block;
+            margin-right: 15px; /* Espacio entre el logo y los enlaces */
+        }
+
+        /* Estilo general del body */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: white;
+            color: black;
+            padding: 30px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        h1, h2, h3 {
+            color: #F7C948;
+            font-family: 'Concert One', sans-serif;
+            font-size: 30px;
+            margin: 0;
+        }
+
+        /* Estilo para el encabezado del contactanos */
+        .contact-header {
+            background-color: #ece4e0;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .cart {
+            background-color: #e7e0dd;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .product {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #e7e0dd;
+            border-radius: 8px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+
+        button {
+            background-color: white;
+            color: black;
+            padding: 12px 12px;
+            margin: 5px;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ece4e0;
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #mensaje-confirmacion {
+            margin-top: 20px;
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="IMAGENES/logo2.jpg" width="180" alt="Logo">
+        </div>
+        <nav>
+            <a href="quienes somos.html">Quienes somos</a>
+            <a href="historia.html">Historia</a>
+            <a href="beneficios.html">Beneficios</a>
+            <a href="cultivo del chontaduro.html">Cultivo</a>
+        </nav>
+<hr>
+    </header>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+ <h1 style="color: #d35305; text-align:center; font-size: 50px; font-family: 'ADLaM Display', sans-serif">CATALOGO Y CARRITO</h1>
+<BR>
+<BR>
+
+    <div class="contact-header">
+<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+        <h1>Contáctanos</h1>
+        <p>Tel: 315 222 1344</p>
+        <p>Correo electrónico: chontaboom777@hotmail.com</p>
+        <p>CHONTA~BOOM, el sabor está en tu mente</p>
+    </div>
+
+    <hr>
+
+    <h2>Catálogo CHONTA~BOOM</h2>
+
+    <div class="section">
+        <div class="product">
+            <strong>Kilo</strong>-$23.000
+            <button onclick="agregarAlCarrito('Kilo', 23000)">Agregar</button>
+        </div>
+        <div class="product">
+            <strong>Libra</strong> - $11.500
+            <button onclick="agregarAlCarrito('libra', 11500)">Agregar</button>
+        </div>
+        <div class="product">
+            <strong>Media Libra</strong> - $5.750
+            <button onclick="agregarAlCarrito('Media libra', 5750)">Agregar</button>
+        </div>
+        <div class="product">
+            <strong>Snacks</strong> - $4.500
+            <button onclick="agregarAlCarrito('Snacks', 4500)">Agregar</button>
+        </div>
+        <div class="product">
+            <strong>Conservados</strong> - $7.000
+            <button onclick="agregarAlCarrito('Conservados', 7000)">Agregar</button>
+        </div>
+    </div>
+
+    <div class="section cart">
+        <h3>Tu carrito:</h3>
+        <ul id="lista-carrito"></ul>
+        <p><strong>Total: $<span id="total">0</span> COP</strong></p>
+        <button onclick="realizarPedido()">Realizar Pedido</button>
+    </div>
+
+    <div id="mensaje-confirmacion"></div>
+
+    <script>
+        let carrito = [];
+
+        function agregarAlCarrito(nombre, precio) {
+            carrito.push({ nombre, precio });
+            actualizarCarrito();
+        }
+
+        function actualizarCarrito() {
+            const lista = document.getElementById('lista-carrito');
+            const totalSpan = document.getElementById('total');
+            lista.innerHTML = '';
+            let total = 0;
+            carrito.forEach((item, index) => {
+                const li = document.createElement('li');
+                li.textContent = `${item.nombre} - $${item.precio.toLocaleString()} COP`;
+
+                // Crear el botón de eliminar
+                const eliminarButton = document.createElement('button');
+                eliminarButton.textContent = 'Eliminar';
+                eliminarButton.onclick = () => eliminarDelCarrito(index);
+
+                li.appendChild(eliminarButton);
+                lista.appendChild(li);
+                total += item.precio;
+            });
+            totalSpan.textContent = total.toLocaleString();
+        }
+
+        function eliminarDelCarrito(index) {
+            carrito.splice(index, 1);
+            actualizarCarrito();
+        }
+
+        function realizarPedido() {
+            if (carrito.length === 0) {
+                alert('El carrito está vacío.');
+                return;
+            }
+
+            const nombre = prompt("Por favor, ingresa tu nombre para el pedido:");
+            if (!nombre) {
+                alert('Pedido cancelado. Faltan datos.');
+                return;
+            }
+
+            const metodoPago = prompt("Elige tu método de pago:\n1. Tarjeta\n2. Nequi\n3. Daviplata\n4. Efecty\n5. Baloto\n6. PSE");
+
+            if (!metodoPago) {
+                alert('Pedido cancelado. Faltan datos.');
+                return;
+            }
+
+            let datosPago = '';
+
+            if (metodoPago === '1') {
+                datosPago = prompt("Ingresa tu número de tarjeta:");
+                if (!datosPago) {
+                    alert('Pedido cancelado. Número de tarjeta requerido.');
+                    return;
+                }
+            } else {
+                datosPago = prompt("Ingresa tu número de contacto para el pago:");
+                if (!datosPago) {
+                    alert('Pedido cancelado. Número de contacto requerido.');
+                    return;
+                }
+            }
+
+            const fechaEntrega = new Date();
+            fechaEntrega.setDate(fechaEntrega.getDate() + 5);
+            const fechaFormateada = fechaEntrega.toLocaleDateString();
+
+            document.getElementById('mensaje-confirmacion').innerHTML = `
+                ¡Gracias ${nombre}!<br>
+                Método de pago seleccionado: ${traducirMetodo(metodoPago)}<br>
+                Fecha estimada de entrega: ${fechaFormateada}.
+            `;
+
+            console.log(`Nuevo pedido de ${nombre} - Productos:`, carrito);
+
+            carrito = [];
+            actualizarCarrito();
+        }
+
+        function traducirMetodo(codigo) {
+            switch(codigo) {
+                case '1': return 'Tarjeta';
+                case '2': return 'Nequi';
+                case '3': return 'Daviplata';
+                case '4': return 'Efecty';
+                case '5': return 'Baloto';
+                case '6': return 'PSE';
+                default: return 'Método desconocido';
+            }
+        }
+    </script>
+
+</body>
+</html>
